@@ -1,0 +1,17 @@
+Source: r8125
+Section: non-free/kernel
+Priority: optional
+Maintainer: PoZitron <639436+PoZitron@users.noreply.github.com>
+Build-Depends:
+ debhelper-compat (= 12),
+ dkms,
+Rules-Requires-Root: no
+Standards-Version: 4.4.1
+Homepage: https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software
+XS-Autobuild: yes
+
+Package: r8125-dkms
+Architecture: all
+Depends: ${misc:Depends}
+Description: dkms source for the r8125 network driver
+ Driver for r8125 network card
